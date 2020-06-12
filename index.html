@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
-<title>HTML Tutorial</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matic Blog</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
 <body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="parallax parallax-sunset"></div>
+    <div style="height:100px;background-color:red;font-size:36px">
+        <span>
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </span>
+    </div>
+    <div class="parallax parallax-sand"></div>
 </body>
-</html> 
+</html>
