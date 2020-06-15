@@ -1,0 +1,116 @@
+/* 
+ * Color palette
+ * Main: #eaece5
+ * Secondary: #b2c2bf
+ * Thridy: #c0ded9
+ * Last: #3b3a30
+ */
+
+body,
+html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: white;
+    font-size: 10vh;
+}
+
+
+/* START: Parallax */
+.parallax {
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    overflow: hidden;
+}
+
+.parallax-sunset {
+    background-image: url('../images/sunset.jpg');
+}
+
+.parallax-sand {
+    background-image: url('../images/sand.JPEG');
+}
+
+.parallax-baby {
+    background-image: url('../images/baby.jpg');
+    height: unset;
+}
+/* END: Parallax */
+
+/* START: Main banner */
+.main-banner {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    overflow: hidden;
+    border-radius: 5px;
+}
+/* END: Main banner */
+
+/* START: Card */
+.cards-wrapper {
+    width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    width: 500px;
+    overflow: hidden;
+    display: inline-block;
+    height: 500px;
+    margin: 20px 10px;
+}
+
+.card-wrapper img {
+    object-fit: cover;
+    height: 500px;
+    width: 400px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.card h3 {
+    color: white;
+    position: absolute;
+    margin-left: 10px;
+}
+/* END: Card */
+
+/* On screens that are 414px or less, set the background color to olive */
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 6vh;
+    }
+
+    .cards-wrapper {
+        width: 100%;
+    }
+    
+    .card-wrapper{
+        margin: 20px 7px;
+    }
+
+    .card {
+        margin: unset;
+    }
+}
+  
